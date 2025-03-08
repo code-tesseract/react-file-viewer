@@ -1,0 +1,62 @@
+{
+  "name": "@tesseract/react-file-viewer",
+  "private": false,
+  "version": "0.1.1",
+  "description": "A client-side file viewer for documents, spreadsheets, PDFs, and more.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@handsontable/react": "^15.1.0",
+    "mammoth": "^1.9.0",
+    "pdfjs-dist": "^4.8.69",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-pdf": "^9.2.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-tesseract/react-file-viewer.git"
+  },
+  "keywords": [
+    "react",
+    "file-viewer",
+    "pdf",
+    "spreadsheet",
+    "document",
+    "office",
+    "viewer"
+  ],
+  "author": "Lambda Tesseract <lambdatesseract@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code-tesseract/react-file-viewer/issues"
+  },
+  "homepage": "https://github.com/code-tesseract/react-file-viewer#readme"
+}
