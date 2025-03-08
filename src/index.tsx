@@ -6,4 +6,3 @@ export { default as PortableDocumentViewer } from "./components/viewers/Portable
 export { default as AudioViewer } from "./components/viewers/AudioViewer";
 export { default as VideoViewer } from "./components/viewers/VideoViewer";
 export { FileTypeEnum } from "./utils/enums/file-type.enum";
-export { typeExtensions } from "./utils/Helper";

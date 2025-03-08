@@ -44,17 +44,6 @@ export const typeExtensions: Record<FileTypeEnum, string[]> = {
     [FileTypeEnum.VIDEO]: ["mp4", "webm", "ogg"],
 };
 
-
-// PDF专用方法
-export async function getBlobUrl(url: string, pdfDocument: any): Promise<string> {
-    if (url.startsWith("blob:")) {
-        return url;
-    }
-    const uint8ArrayData = await pdfDocument.getData();
-    const blob = new Blob([uint8ArrayData], {type: "application/pdf"});
-    return getObjectUrl(blob);
-}
-
 export function getBlobUrlFromBuffer(arrayBuffer: ArrayBuffer, fileType: string): string {
     const type = fileTypeMapReverse[fileType] || fileTypeMapReverse["default"];
     const blob = new Blob([arrayBuffer], {type});
